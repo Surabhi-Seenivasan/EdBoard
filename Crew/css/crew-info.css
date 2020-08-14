@@ -1,0 +1,46 @@
+.crew-head-img1, .crew-head-img2 {
+  height:25em;
+  width: 100%;
+  opacity:0.8;
+}
+@media(min-width:767px){
+     .crew-head-img1 {
+         display: block!important;
+     }
+     .crew-head-img2 {
+         display: none !important;
+     }
+ }
+
+@media(max-width:767px){
+     .crew-head-img2 {
+         display: block!important;
+     }
+     .crew-head-img1 {
+         display: none !important;
+     }
+ }
+
+.splide a:focus{
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+
+}
+
+.splide .is-active img{
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+  border-top: 6px solid red;
+}
+
+@media only screen and (min-width: 770px) {
+  .crew-head-img{
+    position:relative;
+  }
+
+  .crew-head .crew-header-text{
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+  }
+}
